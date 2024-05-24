@@ -1,7 +1,6 @@
 # Machine-Learning-Phase-3-Project
 # Introduction:
 Tanzania, a country with a population exceeding 57 million, faces significant challenges in providing clean water to its residents. While numerous water wells have been established, many of these wells are either in disrepair or have failed entirely. Ensuring the functionality of these water wells is crucial for public health, agriculture, and overall quality of life. Predictive analytics can play a pivotal role in identifying which wells are likely to fail, need repair, or are functioning well, thus enabling proactive maintenance and efficient resource allocation
-![image](https://github.com/Njoroge-Mwaura/Machine-Learning-Phase-3-Project/assets/31213983/701b2ef5-279f-47bb-8ae7-414f2bfae43b)
 # Stakeholders and Usage:
 Government of Tanzania:
 Objective: Improve water supply infrastructure and resource planning.
@@ -12,7 +11,6 @@ Usage: NGOs can use predictive models to prioritize wells that need urgent repai
 Local Communities:
 Objective: Gain reliable access to clean water.
 Usage: By participating in data collection and reporting well conditions, local communities can contribute to the ongoing monitoring and maintenance efforts. This collaboration can help ensure that issues are addressed promptly, minimizing the time residents are without clean water.
-![image](https://github.com/Njoroge-Mwaura/Machine-Learning-Phase-3-Project/assets/31213983/11525be3-ecbd-4758-b006-b72e5e7c882c)
 # Data Understanding
 Our data sources are :
 Training Set Values:
@@ -27,12 +25,10 @@ Usage: The model predicts the condition of these wells.
 Submission Format:
 Description: Template for submitting predictions, including well IDs and predicted status_group.
 Usage: Ensures predictions are submitted in the correct format for evaluation.
-![image](https://github.com/Njoroge-Mwaura/Machine-Learning-Phase-3-Project/assets/31213983/a9607747-38e7-422f-bbed-f1dcae73cc0d)
 # Conclusion on my final model- Random Forest
 The final model is a RandomForestClassifier with tuned hyperparameters trained on a dataset split into training and testing sets. The hyperparameters were tuned using an exhaustive search through various combinations to find the ones that maximize the balanced accuracy score on the test set. The best hyperparameters identified were as follows: 'n_estimators': 200, 'max_depth': 20, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 'sqrt', 'bootstrap': False.
 The model achieved a decent level of performance, with a test accuracy of 78.70% and a balanced test accuracy of 71.61%. These metrics indicate that the model generalizes reasonably well to unseen data and is not overfitting excessively to the training set. The balanced accuracy score is particularly useful in scenarios where classes are imbalanced, as it takes into account the imbalance and provides a more reliable measure of overall model performance.
 The confusion matrix plot visualizes how well the model is predicting each class. It shows the number of true positives, true negatives, false positives, and false negatives for each class, allowing for a deeper understanding of the model's strengths and weaknesses in classification. Overall, the final model appears to be a solid choice for the given dataset and task.
-![image](https://github.com/Njoroge-Mwaura/Machine-Learning-Phase-3-Project/assets/31213983/8c9168ed-ff8e-4e60-b227-8f94ebb0b432)
 # Predictive Analysis of Tanzanian Water Well Conditions
 Model Performance The classifier built to predict the condition of water wells in Tanzania achieved a test accuracy of 78.70% and a balanced test accuracy of 71.61%. These metrics suggest that the model performs reasonably well in identifying the condition of water wells based on features
 Important Features The most important features identified by the model include the type of pump used, the installation year, and possibly other geographic or environmental factors. Understanding these key features can help stakeholders prioritize maintenance and repair efforts for water wells.
